@@ -59,10 +59,11 @@ export const IbmLogo: React.FC = () => (
 );
 
 export const AcerEmcLogo: React.FC = () => (
-    <LogoWrapper>
-        <div className="text-3xl font-bold tracking-tighter">
-            <span className="text-green-600">acer</span><span className="text-blue-800"> EMC²</span>
-        </div>
+    <div className="text-3xl font-bold tracking-tighter text-center sm:text-left">
+  <span className="text-green-600">acer</span>
+  <span className="text-blue-800"> EMC²</span>
+</div>
+
     </LogoWrapper>
 );
 
