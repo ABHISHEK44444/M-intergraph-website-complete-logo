@@ -20,6 +20,10 @@ const clientData = [
     category: 'Networking Others',
     logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>,<JuniperLogo key="juniper"/>,<ArubaLogo key="aruba"/>],
   },
+    {
+    category: 'Power Solution',
+    logos: [<ApcLogo key="apc"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
+  },
   {
     category: 'Aidc & Rfid',
     logos: [<YogaLogo key="yoga"/>, <HoneywellLogo key="honeywell"/>],
@@ -28,10 +32,7 @@ const clientData = [
     category: 'Security & Surveillance',
     logos: [<ZebraLogo key="zebra"/>, <FortunaLogo key="fortuna"/>, <MsfLogo key="msf"/>,<PanasonicLogo key="panasonic"/>],
   },
-    {
-    category: 'Power Solution',
-    logos: [<EatonLogo key="eaton"/>, <VertivLogo key="vertiv"/>, <NumericLogo key="numeric"/>],
-  },
+   
 ];
 
 export const ClientLogos: React.FC = () => {
