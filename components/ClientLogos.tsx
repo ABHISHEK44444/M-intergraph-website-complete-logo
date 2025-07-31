@@ -4,7 +4,7 @@ import {
     HpRectangleLogo, IbmLogo, AcerEmcLogo,
     CiscoLogo, ApcLogo, EpsonLogo,JuniperLogo,ArubaLogo,
     YogaLogo, HoneywellLogo,
-    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo,ApcLogo, VertivLogo, EatonLogo
+    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo,NumericLogo, VertivLogo, EatonLogo
 } from './ClientLogoComponents';
 
 const clientData = [
