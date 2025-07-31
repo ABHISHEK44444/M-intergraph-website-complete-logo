@@ -194,7 +194,7 @@ export const NumericLogo: React.FC = () => (
     <LogoWrapper>
            <img  
   src="images\numeric.png" 
-  alt="EATON logo"
+  alt="Numeric logo"
   class="h-16 w-18"
 />
     </LogoWrapper>
@@ -204,7 +204,7 @@ export const VertivLogo: React.FC = () => (
     <LogoWrapper>
            <img  
   src="images\vertiv.png" 
-  alt="EATON logo"
+  alt="Vertiv logo"
   class="h-16 w-18"
 />
     </LogoWrapper>
