@@ -41,7 +41,7 @@ export const ClientLogos: React.FC = () => {
   const maxRows = Math.max(...logosByColumn.map(l => l.length));
   
   return (
-    <div className="bg-white py-20 sm:py-24">
+    <div className="bg-white py-20 sm:py-24 w-full">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
@@ -52,8 +52,8 @@ export const ClientLogos: React.FC = () => {
             </p>
         </div>
         
-        {/* Desktop Table View */}
-        <div className="mt-16 hidden md:block bg-gradient-to-b from-slate-50 to-slate-100 p-2 sm:p-4 md:p-8 rounded-2xl shadow-lg border border-slate-200">
+        {/* Desktop Table View - Adjusted for more columns */}
+        <div className="mt-16 hidden lg:block bg-gradient-to-b from-slate-50 to-slate-100 p-2 sm:p-4 md:p-8 rounded-2xl shadow-lg border border-slate-200">
             <table className="w-full table-fixed">
               <thead>
                 <tr className="border-b-2 border-slate-300">
@@ -75,7 +75,7 @@ export const ClientLogos: React.FC = () => {
                         key={`${categories[colIndex]}-${rowIndex}`}
                         className={`align-middle ${colIndex < logosByColumn.length - 1 ? 'border-r border-slate-200' : ''}`}
                       >
-                        {logos[rowIndex] || <div className="h-20"></div>}
+                        {logos[rowIndex] || <div className="h-24"></div>}
                       </td>
                     ))}
                   </tr>
@@ -84,8 +84,8 @@ export const ClientLogos: React.FC = () => {
             </table>
         </div>
 
-        {/* Mobile Stacked View */}
-        <div className="mt-16 block md:hidden space-y-10">
+        {/* Mobile & Tablet Stacked View */}
+        <div className="mt-16 block lg:hidden space-y-10">
             {clientData.map((group) => (
                 <div key={group.category}>
                     <h3 className="py-3 px-4 text-center text-base sm:text-lg font-semibold text-slate-800 bg-slate-200 rounded-t-lg border-b-2 border-slate-300">
@@ -107,3 +107,5 @@ export const ClientLogos: React.FC = () => {
     </div>
   );
 };
+
+     
