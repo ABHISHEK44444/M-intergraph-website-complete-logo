@@ -130,19 +130,41 @@ export const HoneywellLogo: React.FC = () => (
 
 export const ZebraLogo: React.FC = () => (
     <LogoWrapper>
-         
+            <img  
+  src="images\cpplus.png" 
+  alt="CPPLUS logo"
+  class="h-16 w-18"
+/>
 
     </LogoWrapper>
 );
 
 export const FortunaLogo: React.FC = () => (
     <LogoWrapper>
-        <span className="text-3xl font-bold text-cyan-600">Fortuna</span>
+           <img  
+  src="images\sparsh.png" 
+  alt="SPARSH logo"
+  class="h-16 w-18"
+/>
     </LogoWrapper>
 );
 
 export const MsfLogo: React.FC = () => (
     <LogoWrapper>
-        <span className="text-4xl font-bold text-red-700">MSF</span>
+           <img  
+  src="images\hikvision.png" 
+  alt="HIKVISION logo"
+  class="h-16 w-18"
+/>
+    </LogoWrapper>
+);
+
+export const PanasonicLogo: React.FC = () => (
+    <LogoWrapper>
+           <img  
+  src="images\panasonic.png" 
+  alt="PANASONIC logo"
+  class="h-16 w-18"
+/>
     </LogoWrapper>
 );
