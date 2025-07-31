@@ -4,7 +4,7 @@ import {
     HpRectangleLogo, IbmLogo, AcerEmcLogo,
     CiscoLogo, ApcLogo, EpsonLogo,JuniperLogo,ArubaLogo,
     YogaLogo, HoneywellLogo,
-    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo,EatonLogo,VertivLogo,NumericLogo
+    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo,ApcLogo, VertivLogo, EatonLogo
 } from './ClientLogoComponents';
 
 const clientData = [
@@ -19,6 +19,10 @@ const clientData = [
   {
     category: 'Networking Others',
     logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>,<JuniperLogo key="juniper"/>,<ArubaLogo key="aruba"/>],
+  },
+    {
+    category: 'Power Solution',
+    logos: [<ApcLogo key="apc"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
   },
     {
     category: 'Power Solution',
