@@ -47,7 +47,7 @@ export const IbmLogo: React.FC = () => (
     <LogoWrapper>
          <img 
   src="images\DELLEMC2.jpg" 
-  alt="IBM logo"
+  alt="Dellem2 logo"
   class="h-10 w-16"
 />
 
