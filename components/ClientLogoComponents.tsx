@@ -197,3 +197,5 @@ export const EatonLogo: React.FC = () => (
                 EATON
             </text>
         </svg>
+ </LogoWrapper>
+);
