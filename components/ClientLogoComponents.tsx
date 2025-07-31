@@ -154,7 +154,7 @@ export const MsfLogo: React.FC = () => (
            <img  
   src="images\hikvision.png" 
   alt="HIKVISION logo"
-  class="h-15 w-16"
+  class="h-14 w-17"
 />
     </LogoWrapper>
 );
@@ -177,7 +177,7 @@ export const EatonLogo: React.FC = () => (
            <img  
   src="images\eaton.png" 
   alt="EATON logo"
-  class="h-16 w-18"
+  class="h-16 w-16"
 />
     </LogoWrapper>
 );
@@ -187,7 +187,7 @@ export const NumericLogo: React.FC = () => (
            <img  
   src="images\numeric.png" 
   alt="Numeric logo"
-  class="h-16 w-18"
+  class="h-17 w-19"
 />
     </LogoWrapper>
 );
