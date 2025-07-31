@@ -29,7 +29,7 @@ const clientData = [
     logos: [<ZebraLogo key="zebra"/>, <FortunaLogo key="fortuna"/>, <MsfLogo key="msf"/>,<PanasonicLogo key="panasonic"/>],
   },
     {
-    category: 'Power Solution ',
+    category: 'Power Solution',
     logos: [<EatonLogo key="eaton"/>, <VertivLogo key="vertiv"/>, <NumericLogo key="numeric"/>],
   },
 ];
