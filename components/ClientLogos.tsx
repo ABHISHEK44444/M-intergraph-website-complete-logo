@@ -12,10 +12,7 @@ const clientData = [
     category: 'Client',
     logos: [<HpCircleLogo key="hp-c"/>, <AcerLogo key="acer"/>, <NComputingLogo key="ncomp"/>],
   },
-     {
-    category: 'Client',
-    logos: [<HpCircleLogo key="hp-c"/>, <AcerLogo key="acer"/>, <NComputingLogo key="ncomp"/>],
-  },
+     
   {
     category: 'Server & Storage',
     logos: [<HpRectangleLogo key="hp-r"/>, <IbmLogo key="ibm"/>, <AcerEmcLogo key="acer-emc"/>],
