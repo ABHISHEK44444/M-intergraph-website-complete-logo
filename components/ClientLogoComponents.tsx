@@ -104,7 +104,7 @@ export const ArubaLogo: React.FC = () => (
          <img 
   src="images\aruba.png" 
   alt="Aruba logo"
-  class="h-18 w-16"
+  class="h-16 w-18"
 />
 
     </LogoWrapper>
@@ -133,7 +133,7 @@ export const ZebraLogo: React.FC = () => (
             <img  
   src="images\cpplus.png" 
   alt="CPPLUS logo"
-  class="h-18 w-16"
+  class="h-17 w-18"
 />
 
     </LogoWrapper>
@@ -154,7 +154,7 @@ export const MsfLogo: React.FC = () => (
            <img  
   src="images\hikvision.png" 
   alt="HIKVISION logo"
-  class="h-16 w-18"
+  class="h-16 w-16"
 />
     </LogoWrapper>
 );
@@ -164,7 +164,7 @@ export const PanasonicLogo: React.FC = () => (
            <img  
   src="images\panasonic.png" 
   alt="PANASONIC logo"
-  class="h-18 w-18"
+  class="h-16 w-20"
 />
     </LogoWrapper>
 );
