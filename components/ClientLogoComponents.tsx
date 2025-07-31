@@ -154,7 +154,7 @@ export const MsfLogo: React.FC = () => (
            <img  
   src="images\hikvision.png" 
   alt="HIKVISION logo"
-  class="h-15 w-17"
+  class="h-15 w-16"
 />
     </LogoWrapper>
 );
