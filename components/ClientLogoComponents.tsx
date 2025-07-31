@@ -160,14 +160,15 @@ export const MsfLogo: React.FC = () => (
 );
 
 export const PanasonicLogo: React.FC = () => (
-    <LogoWrapper>
-           <img  
-  src="images\panasonic.png" 
-  alt="PANASONIC logo"
-  class="h-18 w-16"
-/>
+    <LogoWrapper aria-label="Panasonic Logo">
+        <svg viewBox="0 0 200 50" className="h-8 w-auto" fill="none">
+            <text x="0" y="40" fontFamily="Arial, sans-serif" fontSize="35" fontWeight="bold" fill="#00529B">
+                Panasonic
+            </text>
+        </svg>
     </LogoWrapper>
 );
+
 
 
 export const NumericLogo: React.FC = () => (
