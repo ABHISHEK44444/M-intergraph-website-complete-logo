@@ -144,7 +144,7 @@ export const FortunaLogo: React.FC = () => (
            <img  
   src="images\sparsh.png" 
   alt="SPARSH logo"
-  class="h-18 w-18"
+  class="h-16 w-18"
 />
     </LogoWrapper>
 );
@@ -154,7 +154,7 @@ export const MsfLogo: React.FC = () => (
            <img  
   src="images\hikvision.png" 
   alt="HIKVISION logo"
-  class="h-15 w-18"
+  class="h-15 w-17"
 />
     </LogoWrapper>
 );
@@ -164,7 +164,7 @@ export const PanasonicLogo: React.FC = () => (
            <img  
   src="images\panasonic.png" 
   alt="PANASONIC logo"
-  class="h-17 w-18"
+  class="h-18 w-16"
 />
     </LogoWrapper>
 );
