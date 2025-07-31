@@ -186,7 +186,7 @@ export const EatonLogo: React.FC = () => (
            <img  
   src="images\eaton.png" 
   alt="EATON logo"
-  class="h-16 w-16"
+  class="h-16 w-17"
 />
     </LogoWrapper>
 );
