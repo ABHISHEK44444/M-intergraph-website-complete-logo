@@ -26,11 +26,7 @@ export const AcerLogo: React.FC = () => (
 
 export const NComputingLogo: React.FC = () => (
    <LogoWrapper>
-       <img 
-  src="images\NComputing-logo.png" 
-  alt="NCOMPUTING logo"
-  class="h-25 w-25"
-/>
+       
 </LogoWrapper>
 
 );
@@ -49,8 +45,8 @@ export const HpRectangleLogo: React.FC = () => (
 
 export const IbmLogo: React.FC = () => (
     <LogoWrapper>
-          <img 
-  src="images\IBM2.png" 
+         <img 
+  src="images\DELLEMC2.jpg" 
   alt="IBM logo"
   class="h-10 w-16"
 />
@@ -60,11 +56,7 @@ export const IbmLogo: React.FC = () => (
 
 export const AcerEmcLogo: React.FC = () => (
   <LogoWrapper>
-          <img 
-  src="images\DELLEMC2.jpg" 
-  alt="IBM logo"
-  class="h-10 w-16"
-/>
+      
 
     </LogoWrapper>
 );
