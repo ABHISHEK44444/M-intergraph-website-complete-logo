@@ -5,7 +5,7 @@ import {
   CiscoLogo, ApcLogo, EpsonLogo, JuniperLogo, ArubaLogo,
   YogaLogo, HoneywellLogo,
   ZebraLogo, FortunaLogo, MsfLogo, PanasonicLogo,
-  VertivLogo, EatonLogo
+  VertivLogo, EatonLogo,NumericLogo
 } from './ClientLogoComponents';
 
 const clientData = [
@@ -23,7 +23,7 @@ const clientData = [
   },
   {
     category: 'Power Solution',
-    logos: [<VertivLogo key="vertiv" />, <EatonLogo key="eaton" />],
+    logos: [<VertivLogo key="vertiv" />, <EatonLogo key="eaton" />,<NumericLogo key="numeric" />],
   },
   {
     category: 'Aidc & Rfid',
