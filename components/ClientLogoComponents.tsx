@@ -162,7 +162,16 @@ export const MsfLogo: React.FC = () => (
 export const PanasonicLogo: React.FC = () => (
     <LogoWrapper aria-label="Panasonic Logo">
         <svg viewBox="0 0 200 50" className="h-8 w-auto" fill="none">
-            <text x="0" y="40" fontFamily="Arial, sans-serif" fontSize="35" fontWeight="bold" fill="#00529B">
+            <text
+                x="50%"
+                y="50%"
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontFamily="Arial, sans-serif"
+                fontSize="35"
+                fontWeight="bold"
+                fill="#00529B"
+            >
                 Panasonic
             </text>
         </svg>
@@ -177,7 +186,7 @@ export const EatonLogo: React.FC = () => (
            <img  
   src="images\eaton.png" 
   alt="EATON logo"
-  class="h-16 w-16"
+  class="h-16 w-18"
 />
     </LogoWrapper>
 );
