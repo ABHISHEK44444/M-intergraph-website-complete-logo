@@ -22,7 +22,7 @@ const clientData = [
   },
     {
     category: 'Power Solution',
-    logos: [<NumericLogo key="NumericLogo"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
+    logos: [<NumericLogo key="numericLogo"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
   },
   {
     category: 'Aidc & Rfid',
