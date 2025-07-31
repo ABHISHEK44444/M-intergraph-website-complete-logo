@@ -97,17 +97,18 @@ export const YogaLogo: React.FC = () => (
 
 export const HoneywellLogo: React.FC = () => (
     <LogoWrapper>
-        <span className="text-3xl font-bold text-red-600"></span>
+         <img  
+  src="images\ZEBRA.png" 
+  alt="ZEBRA logo"
+  class="h-16 w-18"
+/>
+
     </LogoWrapper>
 );
 
 export const ZebraLogo: React.FC = () => (
     <LogoWrapper>
-          <img  
-  src="images\ZEBRA.png" 
-  alt="ZEBRA logo"
-  class="h-16 w-18"
-/>
+         
 
     </LogoWrapper>
 );
