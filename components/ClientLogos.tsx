@@ -2,7 +2,7 @@ import React from 'react';
 import {
     HpCircleLogo, AcerLogo, NComputingLogo,
     HpRectangleLogo, IbmLogo, AcerEmcLogo,
-    CiscoLogo, ApcLogo, EpsonLogo,
+    CiscoLogo, ApcLogo, EpsonLogo,JuniperLogo,ArubaLogo,
     YogaLogo, HoneywellLogo,
     ZebraLogo, FortunaLogo, MsfLogo
 } from './ClientLogoComponents';
@@ -18,7 +18,7 @@ const clientData = [
   },
   {
     category: 'Networking Others',
-    logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>],
+    logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>,<JuniperLogo key="juniper"/>,<ArubaLogo key="aruba"/>],
   },
   {
     category: 'Aidc & Rfid',
