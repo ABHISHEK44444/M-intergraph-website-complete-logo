@@ -104,7 +104,7 @@ export const ArubaLogo: React.FC = () => (
          <img 
   src="images\aruba.png" 
   alt="APC logo"
-  class="h-16 w-18"
+  class="h-16 w-17"
 />
 
     </LogoWrapper>
