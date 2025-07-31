@@ -88,6 +88,28 @@ export const EpsonLogo: React.FC = () => (
     </LogoWrapper>
 );
 
+export const JuniperLogo: React.FC = () => (
+    <LogoWrapper>
+         <img 
+  src="images\juniper.png" 
+  alt="APC logo"
+  class="h-10 w-18"
+/>
+
+    </LogoWrapper>
+);
+
+export const ArubaLogo: React.FC = () => (
+    <LogoWrapper>
+         <img 
+  src="images\aruba.png" 
+  alt="APC logo"
+  class="h-10 w-18"
+/>
+
+    </LogoWrapper>
+);
+
 export const YogaLogo: React.FC = () => (
     <LogoWrapper>
         <span className="text-3xl font-bold text-red-500 tracking-tighter">Honeywell</span>
