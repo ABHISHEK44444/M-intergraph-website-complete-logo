@@ -180,23 +180,37 @@ export const NumericLogo: React.FC = () => (
 />
     </LogoWrapper>
 );
-
-export const VertivLogo: React.FC = () => (
-    <LogoWrapper aria-label="Vertiv Logo">
-        <svg viewBox="0 0 200 50" className="h-10 w-auto" fill="none">
-            <text x="0" y="40" fontFamily="Arial, sans-serif" fontSize="40" fontWeight="bold" fill="#FF5800">
-                VERTIV
-            </text>
-        </svg>
+export const EatonLogo: React.FC = () => (
+    <LogoWrapper>
+           <img  
+  src="images\eaton.png" 
+  alt="EATON logo"
+  class="h-16 w-18"
+/>
     </LogoWrapper>
 );
 
-export const EatonLogo: React.FC = () => (
-    <LogoWrapper aria-label="Eaton Logo">
-        <svg viewBox="0 0 200 50" className="h-12 w-auto" fill="none">
-            <text x="0" y="45" fontFamily="Arial, sans-serif" fontSize="45" fontWeight="bold" fill="#005EB8">
-                EATON
-            </text>
-        </svg>
- </LogoWrapper>
+export const NumericLogo: React.FC = () => (
+    <LogoWrapper>
+           <img  
+  src="images\numeric.png" 
+  alt="EATON logo"
+  class="h-16 w-18"
+/>
+    </LogoWrapper>
 );
+
+export const VertivLogo: React.FC = () => (
+    <LogoWrapper>
+           <img  
+  src="images\vertiv.png" 
+  alt="EATON logo"
+  class="h-16 w-18"
+/>
+    </LogoWrapper>
+);
+
+
+
+
+
