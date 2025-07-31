@@ -21,10 +21,7 @@ const clientData = [
     category: 'Networking Others',
     logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>,<JuniperLogo key="juniper"/>,<ArubaLogo key="aruba"/>],
   },
-    {
-    category: 'Power Solution',
-    logos: [<ApcLogo key="apc"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
-  },
+   
     {
     category: 'Power Solution',
     logos: [<NumericLogo key="numericLogo"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
