@@ -171,15 +171,7 @@ export const PanasonicLogo: React.FC = () => (
 
 
 
-export const NumericLogo: React.FC = () => (
-    <LogoWrapper>
-       <img 
-  src="images/clipart3121563.png" 
-  alt="HP logo"
-  class="h-10 w-10"
-/>
-    </LogoWrapper>
-);
+
 export const EatonLogo: React.FC = () => (
     <LogoWrapper>
            <img  
