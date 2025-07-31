@@ -59,14 +59,15 @@ export const IbmLogo: React.FC = () => (
 );
 
 export const AcerEmcLogo: React.FC = () => (
-    <div className="text-3xl font-bold tracking-tighter text-center sm:text-left">
-  <span className="text-green-600">acer</span>
-  <span className="text-blue-800"> EMC²</span>
-</div>
+  <LogoWrapper>
+          <img 
+  src="images\DELLEMC2.png" 
+  alt="IBM logo"
+  class="h-10 w-16"
+/>
 
     </LogoWrapper>
 );
-
 export const CiscoLogo: React.FC = () => (
     <LogoWrapper>
          <img 
