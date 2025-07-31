@@ -21,7 +21,7 @@ const clientData = [
     logos: [<CiscoLogo key="cisco"/>, <ApcLogo key="apc"/>, <EpsonLogo key="epson"/>],
   },
   {
-    category: 'Intelligent Building Solutions',
+    category: 'Aidc & Rfid',
     logos: [<YogaLogo key="yoga"/>, <HoneywellLogo key="honeywell"/>],
   },
   {
