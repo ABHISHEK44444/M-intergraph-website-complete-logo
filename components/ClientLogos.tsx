@@ -3,9 +3,10 @@ import {
   HpCircleLogo, AcerLogo, NComputingLogo,
   HpRectangleLogo, IbmLogo, AcerEmcLogo,
   CiscoLogo, ApcLogo, EpsonLogo, JuniperLogo, ArubaLogo,
+   VertivLogo, EatonLogo,NumericLogo,
   YogaLogo, HoneywellLogo,
-  ZebraLogo, FortunaLogo, MsfLogo, PanasonicLogo,
-  VertivLogo, EatonLogo,NumericLogo
+  ZebraLogo, FortunaLogo, MsfLogo, PanasonicLogo
+ 
 } from './ClientLogoComponents';
 
 const clientData = [
