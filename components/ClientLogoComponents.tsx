@@ -196,7 +196,7 @@ export const NumericLogo: React.FC = () => (
            <img  
   src="images\numeric.png" 
   alt="Numeric logo"
-  class="h-18 w-22"
+  class="h-18 w-23"
 />
     </LogoWrapper>
 );
