@@ -61,7 +61,7 @@ export const IbmLogo: React.FC = () => (
 export const AcerEmcLogo: React.FC = () => (
   <LogoWrapper>
           <img 
-  src="images\DELLEMC2.png" 
+  src="images\DELLEMC2.jpg" 
   alt="IBM logo"
   class="h-10 w-16"
 />
