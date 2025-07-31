@@ -24,10 +24,7 @@ const clientData = [
     category: 'Power Solution',
     logos: [<ApcLogo key="apc"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
   },
-    {
-    category: 'Power Solution',
-    logos: [<NumericLogo key="numericLogo"/>, <VertivLogo key="vertiv"/>, <EatonLogo key="eaton"/>],
-  },
+    
   {
     category: 'Aidc & Rfid',
     logos: [<YogaLogo key="yoga"/>, <HoneywellLogo key="honeywell"/>],
