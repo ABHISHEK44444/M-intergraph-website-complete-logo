@@ -42,7 +42,7 @@ export const ClientLogos: React.FC = () => {
   return (
     <div className="bg-white py-20 sm:py-24">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
               Our Esteemed Partners & Clientele
             </h2>
