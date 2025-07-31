@@ -4,7 +4,7 @@ import {
     HpRectangleLogo, IbmLogo, AcerEmcLogo,
     CiscoLogo, ApcLogo, EpsonLogo,JuniperLogo,ArubaLogo,
     YogaLogo, HoneywellLogo,
-    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo
+    ZebraLogo, FortunaLogo, MsfLogo,PanasonicLogo,EatonLogo,VertivLogo,NumericLogo
 } from './ClientLogoComponents';
 
 const clientData = [
@@ -27,6 +27,10 @@ const clientData = [
   {
     category: 'Security & Surveillance',
     logos: [<ZebraLogo key="zebra"/>, <FortunaLogo key="fortuna"/>, <MsfLogo key="msf"/>,<PanasonicLogo key="panasonic"/>],
+  },
+    {
+    category: 'Power Solution ',
+    logos: [<EatonLogo key="eaton"/>, <VertivLogo key="vertiv"/>, <NumericLogo key="numeric"/>],
   },
 ];
 
