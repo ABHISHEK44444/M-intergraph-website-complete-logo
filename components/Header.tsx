@@ -201,7 +201,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
 
 
 
-              <span className={`text-2xl sm:text-3xl font-extrabold tracking-tight whitespace-nowrap transition-colors duration-300 ${logoColor}`}> </span>
+              <span
+  style={{ fontFamily: 'rocksalt, cursive' }}
+  className={`text-base sm:text-lg font-medium tracking-tight whitespace-nowrap transition-colors duration-200 ${logoColor}`}
+>
+ <b> M INTERGRAPH P LTD.</b>
+</span>
+
             </a>
             
             <div className="hidden lg:flex items-center space-x-10">
