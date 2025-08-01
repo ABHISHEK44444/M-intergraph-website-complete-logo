@@ -102,8 +102,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li className="flex items-start">
                 <PhoneIcon className="h-5 w-5 mr-3 mt-1 flex-shrink-0 text-slate-500" />
                 <div>
-                  <a href="tel:+919899980247" className="hover:text-white transition-colors">+91 9899980247</a><br/>
-                  <a href="tel:+919301530202" className="hover:text-white transition-colors">+91 93015 30202</a>
+                  <a href="tel:+919599701606" className="hover:text-white transition-colors">+91 9599701606</a><br/>
+                  <a href="tel:+919899980247" className="hover:text-white transition-colors">+91 9899980247</a>
                 </div>
               </li>
             </ul>
