@@ -37,7 +37,6 @@ export const CloudModernizationPage: React.FC<CloudModernizationPageProps> = ({ 
         { icon: <CloudIcon className="w-9 h-9" />, title: "Cloud Advisory", path: '#/cloud-advisory', description: "Develop robust cloud strategies for private, public, or hybrid models to unlock business value." },
         { icon: <CpuChipIcon className="w-9 h-9" />, title: "Core Infra Optimization", path: '#/core-infra-optimization', description: "Enhance security, reduce TCO, and maximize the business value of your IT investments with our proven model." },
         { icon: <ScaleIcon className="w-9 h-9" />, title: "Capacity Planning & Advisory", path: '#/capacity-planning', description: "Ensure your infrastructure can meet changing demands, optimizing resource utilization for future growth." },
-        { icon: <RectangleGroupIcon className="w-9 h-9" />, title: "Virtual Desktop Infrastructure (VDI)", path: '#/vdi', description: "Empower flexible workspaces with secure, scalable, and centrally managed desktop environments." },
         { icon: <CloudIcon className="w-9 h-9" />, title: "Cloud Computing Solutions (CCS)", path: '#/ccs', description: "Unlock agility, efficiency, and innovation by leveraging the power of our cloud computing solutions." },
     ];
 
