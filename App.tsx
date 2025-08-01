@@ -25,7 +25,7 @@ import { ContactSection } from './components/ContactSection';
 import { CoreInfraOptimizationPage } from './components/CoreInfraOptimizationPage';
 import { CloudAdvisoryPage } from './components/CloudAdvisoryPage';
 import { CapacityPlanningPage } from './components/CapacityPlanningPage';
-import { VdiPage } from './components/VdiPage';
+
 import { IamsPage } from './components/IamsPage';
 import { MailSecurityPage } from './components/MailSecurityPage';
 import { UtmsPage } from './components/UtmsPage';
@@ -255,9 +255,7 @@ function App(): React.ReactNode {
       case 'products': 
         pageComponent = <ProductsPage onNavigate={navigate} />;
         break;
-      case 'vdi':
-        pageComponent = <VdiPage onNavigate={navigate} />;
-        break;
+      
       case 'iams':
         pageComponent = <IamsPage onNavigate={navigate} />;
         break;
