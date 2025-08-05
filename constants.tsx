@@ -42,4 +42,10 @@ export const TESTIMONIALS: Testimonial[] = [
     author: 'Chandra Shekar Prasad',
     company: 'FutureBuild Construction',
   },
+  {
+    quote: "We present this certificate of appreciation for the significant contribution and excellent services in commercial operations during Mahakumbh Mela 2025.
+Your dedication and efforts are highly commendable.",
+    author: 'Himanshu Shukla',
+    company: 'North Central Railway, Prayagraj',
+  },
 ];
