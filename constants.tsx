@@ -42,10 +42,10 @@ export const TESTIMONIALS: Testimonial[] = [
     author: 'Chandra Shekar Prasad',
     company: 'FutureBuild Construction',
   },
-  {
-    quote: "We present this certificate of appreciation for the significant contribution and excellent services in commercial operations during Mahakumbh Mela 2025.
-Your dedication and efforts are highly commendable.",
+ {
+    quote: "M/s. M Intergraph Systems Pvt. Ltd. supplied and installed 138 Thin Clients (OEM – Thinvent) at Patna Jn. in 2021. The deployment was smooth, and all units performed reliably throughout the 3-year warranty. Highly appreciated and recommended!",
     author: 'Himanshu Shukla',
-    company: 'North Central Railway, Prayagraj',
+    company: 'East Central Railway, Patna Division',
   },
+
 ];
