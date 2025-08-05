@@ -196,7 +196,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
             <a href="#/home" onClick={(e) => handleNavClick(e, '#/home')} className="flex items-center space-x-2 sm:space-x-3">
                <MIntergraphLogo
                      className="text-white" // or any other tailwind classes
-                style={{ height: "70px", width: "70px" }}
+                style={{ height: "50px", width: "60px" }}
  />
 
 
