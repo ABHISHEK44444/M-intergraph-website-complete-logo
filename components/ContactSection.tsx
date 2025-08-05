@@ -45,7 +45,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onNavigate }) =>
             <div className="animate-on-scroll" style={{'--animation-delay': '0.1s'} as React.CSSProperties}>
               <InfoCard icon={<ChatBubbleLeftRightIcon className="w-9 h-9" />} title="Customer Support">
                 <ContactDetail icon={<EnvelopeIcon />} label="Email" href="mailto:servicedesk@mintergraph.com" value="servicedesk@mintergraph.com" />
-                <ContactDetail icon={<PhoneIcon />} label="Phone" href="tel:+919301530202" value="+91 93015 30202" />
+                <ContactDetail icon={<PhoneIcon />} label="Phone" href="tel:+919899980247" value="+91 9899980247" />
               </InfoCard>
             </div>
 
