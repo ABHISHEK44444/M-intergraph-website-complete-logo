@@ -48,7 +48,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   style={{ fontFamily: 'Caveat, cursive' }}
   className={`className="text-2xl font-bold  font-medium text-white tracking-tight`}
 >
- <b> M INTERGRAPH</b>
+  M INTERGRAPH
 </span>
 
 
