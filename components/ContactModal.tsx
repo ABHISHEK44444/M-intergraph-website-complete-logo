@@ -164,9 +164,9 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                                     <EnvelopeIcon className="h-5 w-5 mr-2" />
                                     <span>contact@mintergraph.com</span>
                                 </a>
-                                <a href="tel:+919899980247" className="flex items-center text-slate-600 hover:text-blue-600 transition-colors">
+                                <a href="tel:+919599701606" className="flex items-center text-slate-600 hover:text-blue-600 transition-colors">
                                     <PhoneIcon className="h-5 w-5 mr-2" />
-                                    <span>+91 9899980247</span>
+                                    <span>+91 9599701606</span>
                                 </a>
                             </div>
                         </div>
