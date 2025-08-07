@@ -142,6 +142,12 @@ export const IotMonitoringPage: React.FC<IotMonitoringPageProps> = ({ onNavigate
                             <SolutionListItem>Remote Equipment Diagnostics</SolutionListItem>
                             <SolutionListItem>AI-Driven Data Analytics & Alerts</SolutionListItem>
                             <SolutionListItem>Secure Edge Computing for Field Operations</SolutionListItem>
+                            <SolutionListItem>Embracing Touchless Technologies</SolutionListItem>
+                            <SolutionListItem>Agile Space Utilization Strategies</SolutionListItem>
+                             <SolutionListItem>Prioritizing Air Quality and Wellness</SolutionListItem>
+                             <SolutionListItem>Leveraging Data for Decision Intelligence</SolutionListItem>
+                             <SolutionListItem>Sustainbility as a Core Tenet</SolutionListItem>
+                            <SolutionListItem>The Hybird Work Imperative</SolutionListItem>
                         </ul>
                     </div>
                 </div>
