@@ -129,22 +129,7 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
                 </div>
             </section>
 
-            <section className="py-20 sm:py-28 lg:py-32 bg-gray-50 border-t border-gray-200">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center animate-on-scroll">
-                        <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Custom IoT Solutions Include</h2>
-                    </div>
-                    <div className="mt-16 max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-xl border border-gray-200">
-                        <ul className="space-y-4">
-                            <SolutionListItem>Smart Infrastructure Monitoring (CCTV, power, temperature, environment)</SolutionListItem>
-                            <SolutionListItem>Fleet & Asset Tracking</SolutionListItem>
-                            <SolutionListItem>Remote Equipment Diagnostics</SolutionListItem>
-                            <SolutionListItem>AI-Driven Data Analytics & Alerts</SolutionListItem>
-                            <SolutionListItem>Secure Edge Computing for Field Operations</SolutionListItem>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            
 
             <section className="bg-blue-700 text-white">
                 <div className="container mx-auto px-4 py-20 text-center">
