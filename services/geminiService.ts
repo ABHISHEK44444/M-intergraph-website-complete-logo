@@ -1,6 +1,5 @@
 import { GoogleGenAI, Type } from '@google/genai';
-import { PRODUCTS } from '../constants';
-import type { AiSolution, Product } from '../types';
+import type { AiSolution } from '../types';
 
 const solutionSchema = {
   type: Type.ARRAY,
@@ -9,7 +8,7 @@ const solutionSchema = {
     properties: {
       productName: {
         type: Type.STRING,
-        description: 'The name of the recommended product. Must be one of the provided product names.',
+        description: 'The name of the recommended product or solution.',
       },
       reasoning: {
         type: Type.STRING,
@@ -22,21 +21,18 @@ const solutionSchema = {
 
 export const findSolutions = async (problemDescription: string): Promise<AiSolution[]> => {
   const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-  
+
   if (!apiKey) {
     throw new Error("The AI Solution Finder is currently unavailable because the API Key is not configured.");
   }
 
   const ai = new GoogleGenAI({ apiKey });
 
-  const productList = PRODUCTS.map((p: Product) => p.name).join(', ');
-
-  const systemInstruction = `You are an expert IT solutions consultant for a software company called 'M Intergraph Systems'. 
-Your goal is to analyze a user's business problem and recommend up to two of the most suitable software products from our portfolio.
-Your recommendations MUST be exclusively from this list of available products: ${productList}.
-Do not suggest any products not on this list.
+  const systemInstruction = `You are an expert IT solutions consultant.
+Your goal is to analyze a user's business problem and recommend the most suitable software solutions available in the market.
+You are free to suggest any relevant software, whether from open-source tools, commercial products, or custom-built solutions.
 For each recommendation, provide a clear, concise, and helpful reason why it solves the user's specific problem.
-Structure your entire response as a JSON array of objects according to the provided schema.`;
+Structure your entire response as a JSON array of objects with 'productName' and 'reasoning'.`;
 
   try {
     const response = await ai.models.generateContent({
@@ -55,19 +51,15 @@ Structure your entire response as a JSON array of objects according to the provi
       console.warn("Gemini API returned an empty response.");
       return [];
     }
-    
-    const parsedSolutions: AiSolution[] = JSON.parse(jsonText);
-    
-    const validSolutions = parsedSolutions.filter(sol => 
-        PRODUCTS.some(p => p.name === sol.productName)
-    );
 
-    return validSolutions;
+    const parsedSolutions: AiSolution[] = JSON.parse(jsonText);
+
+    return parsedSolutions;
 
   } catch (error) {
     console.error('Error calling Gemini API:', error);
     if (error instanceof Error) {
-        throw new Error(`Failed to get a recommendation from the AI. Details: ${error.message}`);
+      throw new Error(`Failed to get a recommendation from the AI. Details: ${error.message}`);
     }
     throw new Error('An unknown error occurred while communicating with the AI.');
   }
