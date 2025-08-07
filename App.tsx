@@ -241,7 +241,7 @@ function App(): React.ReactNode {
         break;
       
       // New Philosophy Page
-      case 'philosophy':
+      case 'vision':
         pageComponent = <MintergraphSystemPage />;
         break;
       
