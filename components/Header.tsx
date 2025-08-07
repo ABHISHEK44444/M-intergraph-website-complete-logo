@@ -108,6 +108,8 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
           { path: '#/iot-monitoring', label: 'IoT & Infrastructure Monitoring', icon: <CpuChipIcon /> },
           { path: '#/cctv-surveillance', label: 'CCTV Surveillance & AI Monitoring', icon: <VideoCameraIcon /> },
           { path: '#/ai-agents', label: 'AI Agents & Bots', icon: <ChatBubbleBottomCenterTextIcon /> },
+         { path: '#/aidc', label: 'AIDC(Automatic Identification and Data Capture)', icon:  <CpuChipIcon />},
+
         ]
       },
      { path: '#/vision', label: 'Vision' },
