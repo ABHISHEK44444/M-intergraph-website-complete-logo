@@ -110,7 +110,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
           { path: '#/ai-agents', label: 'AI Agents & Bots', icon: <ChatBubbleBottomCenterTextIcon /> },
         ]
       },
-      { path: '#/philosophy', label: 'vision' },
+      { path: '#/philosophy', label: 'Vision' },
       { path: '#/home#ai-finder', label: 'AI Finder' },
       { path: '#/home#contact', label: 'Contact' },
   ];
