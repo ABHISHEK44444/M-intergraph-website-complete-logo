@@ -53,6 +53,8 @@ import { Dial112CctnsPage } from './components/Dial112CctnsPage';
 import { CommandDashboardsPage } from './components/CommandDashboardsPage';
 import { CctvSurveillancePage } from './components/CctvSurveillancePage';
 import { AiAgentsPage } from './components/AiAgentsPage';
+import { AidcPage } from './components/AidcPage';
+
 
 class ErrorBoundary extends React.Component<React.PropsWithChildren<{}>, { hasError: boolean }> {
   constructor(props: React.PropsWithChildren<{}>) {
@@ -219,6 +221,10 @@ function App(): React.ReactNode {
       case 'ai-agents':
         pageComponent = <AiAgentsPage onNavigate={navigate} />;
         break;
+         case 'aidc':
+  pageComponent = <AidcPage onNavigate={navigate} />;
+  break;
+
 
       // About Pages
       case 'about':
