@@ -89,7 +89,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
         path: '#/about',
         dropdown: [
           { path: '#/about', label: 'The Company', icon: <BriefcaseIcon /> },
-          { path: '#/about#clientele', label: 'Clientele', icon: <UsersIcon /> },
+          { path: '#/about#clientele', label: 'Partners', icon: <UsersIcon /> },
           { path: '#/people-and-values', label: 'Our People & Values', icon: <UsersIcon /> },
           { path: '#/facilities', label: 'Facilities', icon: <BuildingOfficeIcon /> },
           { path: '#/careers', label: 'Careers', icon: <BriefcaseIcon /> },
