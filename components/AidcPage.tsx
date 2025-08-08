@@ -102,7 +102,7 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
       {/* Card 1 */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
         <img
-          src="public\images\rfid-tags-and-inlays.jpg"
+          src="images\rfid-tags-and-inlays.jpg"
           alt="Smart Infrastructure"
           className="w-full h-64 object-cover"
         />
@@ -117,7 +117,7 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
       {/* Card 2 */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
         <img
-          src="public\images\images.jpg"
+          src="images\images.jpg"
           alt="Fleet and Asset Tracking"
           className="w-full h-64 object-cover"
         />
@@ -132,7 +132,7 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
       {/* Card 3 */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
         <img
-          src="public\images\images (1).jpg"
+          src="images\images (1).jpg"
           alt="Smart School Integration"
           className="w-full h-64 object-cover"
         />
