@@ -89,6 +89,66 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
                 </div>
             </section>
 
+<section className="py-20 sm:py-28 lg:py-32 bg-white border-t border-gray-200">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center animate-on-scroll">
+      <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Smart AIDC Applications</h2>
+      <p className="mt-6 text-xl text-slate-600 leading-relaxed">
+        Explore how our AIDC and IoT integrations power smarter, safer, and more connected operations.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+      {/* Card 1 */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+        <img
+          src="public\images\rfid-tags-and-inlays.jpg"
+          alt="Smart Infrastructure"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-slate-800 mb-3"> RFID Consulting</h3>
+          <p className="text-slate-600">
+            As a leading RFID solution provider, M Inergraph P. LTD consulting services to help businesses implement and optimize RFID technology for enhanced visibility and efficiency. We provide expert guidance on implementing the right RFID solutions to meet your business needs. Our team of RFID experts can help you optimize your business processes for maximum efficiency, value, and cost-saving by helping you choose the right RFID tag, RFID reader and antenna system, and customized RFID software that we design for you.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+        <img
+          src="public\images\images.jpg"
+          alt="Fleet and Asset Tracking"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-slate-800 mb-3">RFID Tags</h3>
+          <p className="text-slate-600">
+            An RFID tag is a small device that contains an antenna and a microchip/IC. These tags are mainly passive and active. Passive RFID tags do not come with a power source such as batteries while active RFID tags do and that is why active RFID tags provide a long read range (up to 100m) while passive RFID tags provide a read range of up to 12m (RAIN RFID Tags). Semi-passive RFID tags are available that use batteries and send signals when they detect an RFID reader in the vicinity.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+        <img
+          src="public\images\images (1).jpg"
+          alt="Smart School Integration"
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-2xl font-bold text-slate-800 mb-3">RFID Readers</h3>
+          <p className="text-slate-600">
+            An RFID Reader is a device that is used to interrogate and read RFID signals coming from RFID tags. Fixed RFID readers require separate antennas to transmit and receive RFID signals, however, some RFID readers also come with in-built antenna, known as integrated RFID readers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
             <section id="hardware" className="py-20 sm:py-28 lg:py-32 bg-white border-t border-gray-200 scroll-mt-28">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-4xl mx-auto animate-on-scroll">
@@ -130,7 +190,6 @@ export const AidcPage: React.FC<AidcPageProps> = ({ onNavigate }) => {
             </section>
 
             
-
             <section className="bg-blue-700 text-white">
                 <div className="container mx-auto px-4 py-20 text-center">
                     <UsersIcon className="h-16 w-16 mx-auto mb-6 opacity-70" />
