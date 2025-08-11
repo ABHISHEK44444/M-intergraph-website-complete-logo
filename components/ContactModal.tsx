@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { XMarkIcon, PhoneIcon, EnvelopeIcon } from './IconComponents';
-import { sendContactEmail } from '../services/emailService';
 
 interface ContactModalProps {
     isOpen: boolean;
@@ -15,8 +14,6 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     const [serviceType, setServiceType] = useState('General Inquiry');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-    const [errorMessage, setErrorMessage] = useState('An unexpected error occurred. Please try again.');
-
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
@@ -25,8 +22,19 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
             }
         };
         window.addEventListener('keydown', handleEsc);
+        
+        // Reset form state when modal is closed
+        if (!isOpen) {
+            setStatus('idle');
+            setName('');
+            setEmail('');
+            setPhone('');
+            setServiceType('General Inquiry');
+            setMessage('');
+        }
+
         return () => window.removeEventListener('keydown', handleEsc);
-    }, [onClose]);
+    }, [isOpen, onClose]);
 
     if (!isOpen) {
         return null;
@@ -35,30 +43,45 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus('sending');
-        setErrorMessage(''); // Clear previous errors
+
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('phone', phone);
+        formData.append('serviceType', serviceType);
+        formData.append('message', message);
+        
+        const formspreeEndpoint = 'https://formspree.io/f/xzzvyqya';
 
         try {
-            await sendContactEmail({ name, email, phone, serviceType, message });
-            setStatus('success');
+            const response = await fetch(formspreeEndpoint, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                setStatus('success');
+            } else {
+                setStatus('error');
+            }
         } catch (error) {
             setStatus('error');
-            if (error instanceof Error) {
-                setErrorMessage(error.message);
-            } else {
-                setErrorMessage('An unexpected error occurred. Please try again.');
-            }
         }
     };
 
     return (
         <div 
-            className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start sm:items-center justify-center p-4 backdrop-blur-sm overflow-y-auto"
+            className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 backdrop-blur-sm animate-fade-in"
+            style={{ animationDuration: '0.3s' }}
             onClick={onClose}
             aria-modal="true"
             role="dialog"
         >
             <div 
-                className="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 max-w-xl w-full relative transform transition-all duration-300 ease-out"
+                className="bg-white rounded-2xl shadow-2xl p-8 sm:p-10 max-w-xl w-full relative transform transition-all duration-300 ease-out"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button 
@@ -70,7 +93,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 </button>
                 
                 {status === 'success' ? (
-                    <div className="text-center py-10">
+                    <div className="text-center py-10 animate-fade-in">
                         <h2 className="text-3xl font-bold text-blue-600 mb-3">Thank You!</h2>
                         <p className="text-lg text-slate-600">Your message has been sent successfully. We'll get back to you shortly.</p>
                         <button
@@ -92,7 +115,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                                 <div>
                                     <label htmlFor="name" className="sr-only">Your Name</label>
                                     <input 
-                                        type="text" id="name" value={name} onChange={(e) => setName(e.target.value)}
+                                        type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)}
                                         placeholder="Your Name *" 
                                         className="w-full px-5 py-3.5 bg-gray-100 border-2 border-gray-200 rounded-lg text-base focus:ring-4 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-300" 
                                         required
@@ -101,7 +124,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                                 <div>
                                     <label htmlFor="email" className="sr-only">Email Address</label>
                                     <input 
-                                        type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)}
+                                        type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}
                                         placeholder="Email Address *" 
                                         className="w-full px-5 py-3.5 bg-gray-100 border-2 border-gray-200 rounded-lg text-base focus:ring-4 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-300" 
                                         required
@@ -110,7 +133,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                                 <div>
                                     <label htmlFor="phone" className="sr-only">Phone Number</label>
                                     <input 
-                                        type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)}
+                                        type="tel" id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)}
                                         placeholder="Phone Number *" 
                                         className="w-full px-5 py-3.5 bg-gray-100 border-2 border-gray-200 rounded-lg text-base focus:ring-4 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-300" 
                                         required
@@ -120,6 +143,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                                     <label htmlFor="service-type" className="sr-only">Service Type</label>
                                     <select 
                                         id="service-type"
+                                        name="serviceType"
                                         value={serviceType}
                                         onChange={(e) => setServiceType(e.target.value)}
                                         className="w-full px-5 py-3.5 bg-gray-100 border-2 border-gray-200 rounded-lg text-base text-slate-600 focus:ring-4 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-300"
@@ -138,7 +162,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                             <div>
                                 <label htmlFor="message" className="sr-only">Enter Your Message here</label>
                                 <textarea 
-                                    id="message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)}
+                                    id="message" rows={4} name="message" value={message} onChange={(e) => setMessage(e.target.value)}
                                     placeholder="Enter Your Message here *" 
                                     className="w-full px-5 py-3.5 bg-gray-100 border-2 border-gray-200 rounded-lg text-base focus:ring-4 focus:ring-blue-500/30 focus:border-blue-500 transition-all duration-300"
                                     required
@@ -146,7 +170,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                             </div>
                             
                             {status === 'error' && (
-                                <p className="text-base text-red-600 text-center">{errorMessage}</p>
+                                <p className="text-base text-red-600 text-center">Something went wrong. Please try again later.</p>
                             )}
                             
                             <button
